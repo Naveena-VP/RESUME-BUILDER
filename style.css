@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    color: #333;
+}
+
+header {
+    background: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-section,
+.preview-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1f3c88;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #1f3c88;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #162d68;
+}
+
+.clear-btn {
+    background: #777;
+    margin-left: 10px;
+}
+
+.clear-btn:hover {
+    background: #555;
+}
+
+#resume {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    min-height: 700px;
+}
+
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid #1f3c88;
+    padding-bottom: 15px;
+}
+
+.resume-header h1 {
+    color: #1f3c88;
+    margin-bottom: 8px;
+}
+
+.resume-header p {
+    font-size: 14px;
+}
+
+.resume-content {
+    margin-top: 25px;
+}
+
+.resume-content h3 {
+    color: #1f3c88;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.resume-content p {
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+.download-btn {
+    width: 100%;
+    background: #198754;
+}
+
+.download-btn:hover {
+    background: #146c43;
+}
+
+footer {
+    text-align: center;
+    background: #1f3c88;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
